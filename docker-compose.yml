@@ -3,9 +3,7 @@
 version: "3"
 services:
   jenkins_execution:
-    build:
-      context: .
-      dockerfile: Dockerfile.dockerFile
+    image: khimin1719/jenkins-java8-debian-gradle:latest
     labels:
       kompose.service.type: nodeport
     networks: ['backend']
